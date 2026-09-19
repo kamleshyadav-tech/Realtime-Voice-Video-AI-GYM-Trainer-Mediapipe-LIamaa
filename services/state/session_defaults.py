@@ -21,10 +21,6 @@ def initial_session_defaults():
         "plan_sets": 3,
         "plan_reps": 10,
 
-        # Optional voice-coaching integration.  It may be attached by a
-        # separate setup flow, so the UI must also work when it is absent.
-        "voice_pipeline": None,
-
         # Common Angles
         "knee_angle": 0,
         "back_angle": 0,
