@@ -56,6 +56,9 @@ def main():
 
         if st.session_state.username:
             st.caption(f"👤 Login as {st.session_state.username}")
+            if st.button("Change user", width="stretch", key="change_user_button"):
+                st.session_state.clear()
+                st.rerun()
 
         st.divider()
 
@@ -254,4 +257,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
