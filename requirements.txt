@@ -1,7 +1,11 @@
 streamlit==1.54.0
 streamlit-webrtc==0.64.5
+# MediaPipe depends on OpenCV's contrib modules. Use the matching headless
+# distribution so a Streamlit Cloud build does not require a desktop display.
 mediapipe==0.10.14
-opencv-python-headless==4.10.0.84
+opencv-contrib-python-headless==4.10.0.84
+# These MediaPipe/OpenCV wheels were built against the NumPy 1.x ABI.
+numpy==1.26.4
 pandas==2.2.3
 groq>=0.12.0
 gtts==2.5.3
